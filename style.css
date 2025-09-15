@@ -1,0 +1,232 @@
+/* ---------------------- */
+/* Base Styles */
+/* ---------------------- */
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #0f1724;   /* Dark default */
+    color: #e6eef8;
+    line-height: 1.7;
+    transition: background 0.4s ease, color 0.4s ease;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* ---------------------- */
+  /* Header */
+  /* ---------------------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid; /* adds a clean border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4);
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #fff;
+  }
+  
+  /* ---------------------- */
+  /* Hero / Bio Section */
+  /* ---------------------- */
+  .hero {
+    margin: 60px 0;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    background: #0b1220;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero h1,
+  .hero h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: inherit;
+  }
+  
+  .hero p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: inherit;
+  }
+  
+  /* Edit Hero Button (top right) */
+  .hero-edit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .hero-edit:hover {
+    background: #7c3aed;
+    color: #fff;
+  }
+  
+  /* About Section Edit Btn */
+  .edit-btn {
+    background: transparent;
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .edit-btn:hover {
+    background: #7c3aed;
+    color: #fff;
+  }
+  
+  /* ---------------------- */
+  /* Buttons */
+  /* ---------------------- */
+  .btn {
+    display: inline-block;
+    margin: 8px 8px 0 0;
+    padding: 10px 18px;
+    background: #7c3aed;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  .btn:hover {
+    background: #9d5cff;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.5);
+  }
+  .btn.secondary {
+    background: transparent;
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+  }
+  .btn.secondary:hover {
+    background: #7c3aed;
+    color: #fff;
+  }
+  
+  /* ---------------------- */
+  /* Projects Section */
+  /* ---------------------- */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    background: #0b1220;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+  }
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    transition: transform 0.3s ease;
+  }
+  .project-card img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* ---------------------- */
+  /* Footer */
+  /* ---------------------- */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid #1e293b;
+    transition: color 0.4s ease, border 0.4s ease;
+  }
+  
+  /* ---------------------- */
+  /* Light Theme Styles */
+  /* ---------------------- */
+  body.light-theme {
+    background: #f9fafb;
+    color: #111827;
+  }
+  
+  body.light-theme nav a {
+    color: #334155;
+  }
+  body.light-theme nav a:hover {
+    color: #000;
+  }
+  
+  body.light-theme .hero {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  body.light-theme .project-card {
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  body.light-theme footer {
+    color: #475569;
+    border-top: 1px solid #cbd5e1;
+  }
+  body.light-theme .btn.secondary {
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+  }
+  

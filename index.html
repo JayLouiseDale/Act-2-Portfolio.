@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jay Louise Dale — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="profile.jpg" alt="Profile Photo" class="avatar">
+        <div>
+          <h1>Jay Louise Dale Luison Bada</h1>
+          <p>Web developer • Photographer • UI enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn secondary">🌙 Dark Mode</button>
+      </nav>
+    </header>
+
+    <main>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="intro" id="hero-content">
+      <h2>Hi — I'm Jay. I build simple, clear websites.</h2>
+      <p>
+        I’m a passionate web developer who loves turning ideas into functional and user-friendly websites. 
+        I focus on writing clean, maintainable code and creating responsive designs that look great on any device. 
+        My main tools are HTML, CSS, JavaScript, and PHP, but I also explore new technologies whenever possible. 
+      </p>
+      <p>
+        Beyond coding, I enjoy photography and visual storytelling — capturing details in everyday life and 
+        applying that same creative eye to design. Recently, I’ve also been exploring game development as a 
+        hobby, where I can combine logic, design, and creativity. 
+      </p>
+      <a class="btn" href="#projects">See projects</a>
+      <a class="btn secondary" href="mailto:youremail@example.com">Email me</a>
+    </div>
+  
+    <!-- Edit Hero Button aligned right -->
+    <button class="btn edit-btn hero-edit" id="edit-hero">✏️ Edit</button>
+  </section>
+  
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Game development project screenshot">
+            <h3>Indie Game Development</h3>
+            <p>A personal project where I design and build simple 2D and 3D games. Focused on gameplay mechanics, creativity, and fun user experience.</p>
+          </div>    
+          <div class="project-card">
+            <img src="project2.jpg" alt="Library project screenshot">
+            <h3>Digital Library Catalog</h3>
+            <p>School catalog with borrow/return features, user roles, and responsive UI.</p>
+          </div>
+          <div class="project-card">
+            <img src="project3.jpg" alt="Photography project screenshot">
+            <h3>Photography Portfolio</h3>
+            <p>Gallery site with filtered collections, lightbox, and contact form.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About <button id="edit-btn" class="btn secondary">✏️ Edit</button></h2>
+        <p id="about-text">
+          I'm a web developer focused on clarity and performance. I prefer simple, maintainable code and accessible interfaces. 
+          Outside of coding I do photography and enjoy composing shots for both portraits and landscapes.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+          <li>HTML, CSS (Flexbox, Grid), Responsive design</li>
+          <li>JavaScript, PHP, MySQL</li>
+          <li>UI/UX Design</li>
+          <li>Photography & Editing</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:badajaylouise@gmail.com">badajaylouise@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/jay_arki157" target="_blank">@jay_arki157</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Jay Louise Dale — Built with HTML & CSS
+    </footer>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
